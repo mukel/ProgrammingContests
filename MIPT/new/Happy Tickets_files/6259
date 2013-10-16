@@ -1,0 +1,17 @@
+function y5_getBannerCode(){
+    var sR = 'y5' + y5_iR + '-';
+    var aDirect = new Array('<div class="ad"><div class="ad-link"><a href="http://bs.yandex.ru/count/Ql6ceUf9b3W40000Zh4VXTW4XPE70PK2cm5kGoM8jYS3G0Q9bv1Uc8ArdQdiAmQSk2g62mMMfO4Q3PgdcsHKag2mgHQAg9y64AMTILUHkv7xZ0QFiIsF7WMVkH4FsmIJat42cGQBhy_Jh4ACaCG9e90r3AUCPwC1V0q0" target="_blank">Решение задач</a></div><div>Решаем контрольные, задачи по высшей математике и физике. Опыт, гарантии.</div> <span class="url">zadachi-reshenie.ru</span></div>');
+    var sLinkHow = '<div class="go-ad-how"><a target="_blank" href="http://advertising.yandex.ru/welcome/?from=context">Дать объявление</a></div>';
+    var sLinkAll = '';
+    var sLinkDirect = '<div class="direct"><a href="http://direct.yandex.ru/">Яндекс.Директ</a></div>';
+    var sLinkClose = '<div class="close" onclick="y5_closeBanner(' + y5_iR + ',this);"><span class="text">Закрыть</span><span>&nbsp;[&times;]</span></div>';
+
+    var sTableHeader = '<table class="header"><tr><td>' + sLinkDirect + '<wbr>' + sLinkHow + '</td><td class="right">' + sLinkAll + '<wbr>' + sLinkClose + '</td></tr></table>';
+
+    var sTableData = '<table class="data"><tr>' + y5_createTableData(aDirect) + '</tr></table>';
+    var sBannerCode = sTableHeader + sTableData;
+
+    y5_showBanner(sBannerCode);
+}
+
+y5_getBannerCode();
