@@ -1,0 +1,30 @@
+-- Example 0
+A
+BABA
+
+Possible
+-- Example 1
+BAAAAABAA
+BAABAAAAAB
+
+Possible
+-- Example 2
+A
+ABBA
+
+Impossible
+-- Example 3
+AAABBAABB
+BAABAAABAABAABBBAAAAAABBAABBBBBBBABB
+
+Possible
+-- Example 4
+AAABAAABB
+BAABAAABAABAABBBAAAAAABBAABBBBBBBABB
+
+Impossible
+-- Example 5
+ABBA
+AB
+
+Possible
